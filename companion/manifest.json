@@ -1,0 +1,29 @@
+{
+	"$schema": "../node_modules/@companion-module/base/assets/manifest.schema.json",
+	"type": "surface",
+	"id": "mackie-control",
+	"name": "Mackie Control",
+	"shortname": "Mackie Control",
+	"description": "Discovers Mackie Control compatible surfaces over RTP MIDI",
+	"version": "1.0.3",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-surface-mackie-control.git",
+	"bugs": "https://github.com/bitfocus/companion-surface-mackie-control/issues",
+	"maintainers": [
+		{
+			"name": "John Arrandale",
+			"email": "bootsie227@gmail.com"
+		}
+	],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "0.0.0",
+		"entrypoint": "../dist/main.js"
+	},
+	"legacyIds": [],
+	"manufacturer": "Generic",
+	"products": ["MCU Pro", "X-Touch"],
+	"usbIds": [],
+	"keywords": ["xtouch", "mcu", "mackie", "control", "mc"]
+}
